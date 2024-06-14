@@ -6,8 +6,7 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">   
     <style>
 
 *, html {
@@ -19,6 +18,9 @@
 .btn{
     margin-right: 10px;
 }
+.wash{
+  background-color: lightgoldenrodyellow;
+}
 
 .img{
     margin: auto;
@@ -29,6 +31,7 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
+   
 }
 
 .navbar-nav{
@@ -53,15 +56,12 @@ body, html {
   font-size: large;
 }
 
-.na{
-  border-radius: 50%;
-}
-
 video {
     width: 152%;
     height: 60vh; /* Adjust video size to cover the full viewport height */
     object-fit: cover; /* Cover the container without losing the aspect ratio */
     margin-top: 110px;
+    background-attachment: fixed;
 }
 
 /* Container holding the image and the text */
@@ -90,9 +90,7 @@ video {
   text-align: center;
   margin:auto;
 }
-.checking{
-  border-radius: 50%;
-}
+
 ul{
   margin-top: 80px;
 }
@@ -138,6 +136,7 @@ h3{
   margin-left: 35px;
 }
 
+
 .guest{
   margin-left: 150px;
   margin-top: 50px;
@@ -153,6 +152,7 @@ h3{
 
 .dream{
    font-family: britannic bold;
+   text-align: left;
 }
 
 .middle {
@@ -313,7 +313,7 @@ h3{
   <!-- nav starts form  here -->
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: cadetblue;">
     <div class="container-fluid">
-      <img class="na" src="nalogo1.jpg" alt="" width="100px" height="80px">
+      <img class="na rounded-pill" src="naaa.png" alt="" width="100px" height="80px">
       <button class="navbar-toggler justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -338,7 +338,7 @@ h3{
         </ul>
       </div>
     </div>
-      <button class="btn btn-outline-danger fw-bold fs-5" type="submit">BOOK NOW</button>
+      <button class="btn btn-outline-danger fw-bold fs-5 rounded-pill" type="submit">BOOK NOW</button>
 </nav>
     <!-- nav ends here -->
 
@@ -357,13 +357,13 @@ h3{
       </div>
     <!-- first row ends -->
     <div class="row justify-content-center align-items-center">
-      <div class="checking col-md-2 col-lg-3 border-light border-radius: 8px bg bg-secondary text-light m-5 text-center p-3 fw-bold">
+      <div class="checking col-md-2  border-light border-radius: 8px bg bg-secondary text-light m-5 text-center p-3 fw-bold rounded-pill">
           CheckIn
       </div>
-      <div class="checking col-md-2 col-lg-3 border-light border-radius: 8px bg bg-secondary text-light text-center p-3 fw-bold">
+      <div class="checking col-md-2 border-light border-radius: 8px bg bg-secondary text-light text-center p-3 fw-bold rounded-pill">
           CheckOut
       </div>
-      <div class=" m-5 col-md-2 col-lg-3 border-light text-light text-center p-2">
+      <div class=" m-5 col-md-2  border-light text-light text-center p-2">
         <form class="d-flex" >
           <button class="btn fw-bold rounded" type="button" style="background-color:cornflowerblue ;">BOOK NOW</button>
         </form>
@@ -375,7 +375,7 @@ h3{
     <div class="row text-center">
           <div class="dream col-md-7 lg-6 my-5">
               <h1 class="text-dark fw-light"> DREAMY HOTEL - A DREAM TO LIVE </h1>
-              <p class="fs-6 border border-light lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa odio! Unde illum ad suscipit error, modi amet rerum obcaecati, mollitia provident esse, eaque ratione nostrum cum impedit nam alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque eveniet accusamus dolorem ratione sint eos esse culpa voluptas minima ullam doloribus, adipisci cum saepe odio sequi quis magnam itaque.</p>
+              <p class="fs-6 lh-lg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, culpa odio! Unde illum ad suscipit error, modi amet rerum obcaecati, mollitia provident esse, eaque ratione nostrum cum impedit nam alias. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloremque eveniet accusamus dolorem ratione sint eos esse culpa voluptas minima ullam doloribus, adipisci cum saepe odio sequi quis magnam itaque.</p>
           </div>
           <div class="col-md-5 lg-6 my-5">
             <img class="img" src="hotel1.jpg" alt="" height="300" width="500">
@@ -478,8 +478,8 @@ h3{
               <figcaption class="fig"> Air Conditioning</figcaption>
             </figure>
             <figure class="image8">
-              <img src="laundry.webp" alt="" width="170px" height="100px" >
-              <figcaption class="fig">Guest Laundry </figcaption>
+              <img class="wash" src="laundry2.jpg.png" alt="" width="100px" height="90px">
+              <figcaption class="fig">Laundry </figcaption>
             </figure>
           </div>
           <div class="child d-flex">
@@ -489,7 +489,7 @@ h3{
             </figure>
             <figure class="image8">
               <img src="cycle1.jpg" alt="" width="130px" height="90px">
-              <figcaption class="fig"> Bicycle , bike storage</figcaption>
+              <figcaption class="fig">Parking</figcaption>
             </figure>
           </div>
         </div>
@@ -503,6 +503,7 @@ h3{
         <!-- 6th row starts -->
         <!-- 1st slide -->
         <h5 class="opinion text-center fs-2">OUR GUEST REVIEWS</h5>
+        <hr>
         <div id="carouselExampleFade" class="sliding carousel slide carousel-fade" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
@@ -530,7 +531,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star"></span>
-                      <p class="card-text">Stayed with my husband, friends, and family for my wedding. The rooms were nice, updated, and clean. The staff was beyond friendly and accommodating to each of our needs. We had a wonderful stay and having the restaurant on site was really convenient. </p>
+                      <p class="card-text">Stayed with my husband, friends, and family for my wedding. The rooms were nice, updated, and clean. The staff was beyond friendly and accommodating to each of our needs. We had a wonderful stay. </p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -544,7 +545,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star"></span>
                       <span class="fa fa-star"></span>
-                      <p class="card-text">Great place to stay.The best thing is their dealing..they treated us like guests not customers..service was wonderful, food was good also...reasonable..not too expensive.</p>
+                      <p class="card-text">Great place to stay.The best thing is their dealing..they treated us like guests not customers..service was wonderful, food was good also...reasonable..not too expensive. I had a very wonderful time spent there.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -576,7 +577,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
-                      <p class="card-text">The Indus Hotel Hyderabad is a top-notch hotel that offers guests a comfortable and luxurious stay in the heart of the city. The location of the hotel is fantastic, with easy access to many of Hyderabad's main attractions, making it an ideal choice for both business and leisure travelers.</p>
+                      <p class="card-text">The Indus Hotel Hyderabad is a top-notch hotel that offers guests a comfortable and luxurious stay in the heart of the city. The location of the hotel is fantastic, with easy access to many of Hyderabad's main attractions.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -590,7 +591,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star"></span>
-                      <p class="card-text">I recently stayed at Indus Hotel in Hyderabad and was quite pleased with my experience. The location is convenient, as it is close to many popular tourist spots and shopping areas. The staff was friendly and accommodating, always ready to help with any requests.</p>
+                      <p class="card-text">I recently stayed at Indus Hotel in Hyderabad and was quite pleased with my experience. The location is convenient, as it is close to many popular tourist spots and shopping areas. The staff was friendly and accommodating.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -608,7 +609,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star"></span>
-                      <p class="card-text">he room was spacious and clean, with comfortable bedding and all the necessary amenities. The bathroom was also well-maintained and had a good supply of toiletries. The Wi-Fi connection was fast and reliable, which was important for me as I needed to work remotely during my stay.</p>
+                      <p class="card-text">he room was spacious and clean, with comfortable bedding and all the necessary amenities. The bathroom was also well-maintained and had a good supply of toiletries. The Wi-Fi connection was fast and reliable.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -636,7 +637,7 @@ h3{
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
                       <span class="fa fa-star checked"></span>
-                      <p class="card-text">One of the High rated Hotel as well as restaurant in Hyderabad city, provides best hygiene environment for national and international travellers, this hotel in is heart of Hyderabad, Rooms prices are high but worth expending, restaurant is excellent with quality food.</p>
+                      <p class="card-text">One of the High rated Hotel as well as restaurant in Hyderabad city, provides best hygiene environment for national and international travellers, this hotel in is heart of Hyderabad, Rooms prices are high but worth expending.</p>
                       <a href="#" class="btn btn-primary">Read More</a>
                     </div>
                   </div>
@@ -822,6 +823,7 @@ h3{
     
               video.play().catch(error => console.error("Video play failed.", error));
             });
+            
       </script>
       <!-- script ends here -->
 </body>
